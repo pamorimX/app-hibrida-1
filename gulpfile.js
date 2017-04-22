@@ -10,15 +10,13 @@ gulp.task('default',['less', 'concat-css', 'uglify','connect', 'watch' ]);
 gulp.task('less', function() {
     gulp.src('src/less/**/*.less')
     .pipe(less())
-    .pipe(gulp.dest('src/css'))
-    .pipe(connect.reload());
+    .pipe(gulp.dest('src/css'));
 });
 
 gulp.task('concat-css', function(){
 	return gulp.src('src/css/**/*.css')
 	.pipe(concat('estilos.css'))
-	.pipe(gulp.dest('www/css'))
-  .pipe(connect.reload());
+	.pipe(gulp.dest('www/css'));
 });
 
 gulp.task('uglify', function (cb) {
