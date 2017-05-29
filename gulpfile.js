@@ -1,8 +1,8 @@
-var gulp = require('gulp'),
-    less = require('gulp-less'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    pump = require('pump'),
+var gulp    = require('gulp'),
+    less    = require('gulp-less'),
+    concat  = require('gulp-concat'),
+    uglify  = require('gulp-uglify'),
+    pump    = require('pump'),
     connect = require('gulp-connect');
 
 gulp.task('default',['less', 'concat-css', 'uglify','connect', 'watch' ]);	
@@ -33,7 +33,6 @@ gulp.task('uglify', function (cb) {
 gulp.task('watch',function(){
   gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('src/css/**/*.css', ['concat-css']);
-  gulp.watch('src/js/**/*.js', ['uglify']);
   gulp.watch('src/js/**/*.js', ['uglify']);
   gulp.watch('www/**/*', ['reload']);
 });
