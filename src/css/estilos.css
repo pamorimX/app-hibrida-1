@@ -1,3 +1,42 @@
 body {
   margin: 0;
+  padding: 10px;
+}
+body .menu {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: cornsilk;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial, verdana, sans-serif;
+}
+body .menu span {
+  margin: 10px;
+  padding: 10px;
+  background: #a5a5a5;
+  cursor: pointer;
+}
+body .visivel {
+  display: block;
+}
+body .oculto {
+  display: none;
+}
+body #pagina3 label {
+  display: block;
+}
+body #pagina3 input {
+  background-color: #ffffff;
+  margin: 0 0 15px 0;
+}
+body #pagina3 textarea {
+  display: block;
+  margin: 0 0 15px 0;
+}
+body #pagina3 button {
+  display: block;
 }

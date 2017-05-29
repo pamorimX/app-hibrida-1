@@ -2,35 +2,45 @@
 <html lang="pt">
 
 <head>
-	<meta charset="utf-8">
-	<title>Trabalho Pedro Amorim</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="utf-8">
+    <title>Trabalho Pedro Amorim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<div class="wrapper">
-		<div id="pagina1">
-			<h1>Moto Agenda</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sem. Donec egestas mauris ac elit accumsan, id lacinia augue auctor. Aliquam tristique ante ut dapibus feugiat. Vestibulum ante ipsum primis</p> 
-		</div>
-		<div id="pagina2">
-		</div>
-		<div id="pagina3">
+<div class="wrapper">
 
-			<form>
-				<fieldset>
-					<legend>Formulário</legend>
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" placeholder="seu nome...">
+    <div id="pagina1">
+        <h2>Pagina 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sem. Donec egestas mauris ac elit accumsan, id lacinia augue auctor. Aliquam tristique ante ut dapibus feugiat. Vestibulum ante ipsum primis</p>
+    </div>
 
-					<label for="mensagem">Mensagem:</label>
-					<textarea id="mensagem" name="mensagem"></textarea>
-				</fieldset>
-			</form>
-		</div>
+    <div id="pagina2">
+        <h2>Pagina 2</h2>
+    </div>
 
-		<div class="menu"></div>
-	</div>
-	<script src="js/script.js"></script>
+    <div id="pagina3">
+        <h2>Pagina 3</h2>
+        <form>
+            <fieldset>
+                <legend>Formulário</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="seu nome...">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="button">Enviar</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="menu">
+        <span id="pagina1-btn">PAGINA1</span>
+        <span id="pagina2-btn">PAGINA2</span>
+        <span id="pagina3-btn">PAGINA3</span>
+    </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
